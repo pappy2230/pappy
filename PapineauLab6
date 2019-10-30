@@ -1,0 +1,39 @@
+// Input: Two numbers from the programmer.
+// Process: Out of two numbers inputted, one will be the biggest.
+// Output: It will find the biggest number out of the two given.
+#include <iostream>
+using namespace std;
+int CalcLarger(int, int);
+int main()
+{
+	//Declaring variables
+	int num1, num2, max;
+
+	// Input & output table
+	cout << "*********************** Which is Larger **************************\n";
+	cout << "Please enter 2 integer values (whole numbers) seperated by a space.";
+	cout << "\nI will tell you which number is larger.\n";
+	cin >> num1 >> num2;
+	
+	max = CalcLarger(num1, num2);
+
+	cout << "\nThe larger of " << num1 << " and " << num2 << " is " << max << endl;
+}
+
+	// Function header
+	int CalcLarger(int num1, int num2)
+	{
+		int max;
+		if (num1 >= num2)
+		{
+			max = num1;
+		}
+	
+		else
+		{
+			max = num2;
+		}
+	
+		return max;
+	}
+	
